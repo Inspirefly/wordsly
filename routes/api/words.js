@@ -11,11 +11,11 @@ function getRandomWord() {
 
 router.get('/', (req, res) => {res.json(words)});
 router.get('/:num', (req, res) => {
-  let wordsArr = [];
+  let wordList = {};
   for (let i = 0; i < req.params.num; i++) {
-    wordsArr.push(getRandomWord());
+    wordList[i] = getRandomWord();
   }
-  res.json(wordsArr);
+  res.json(wordList);
 });
 
 
