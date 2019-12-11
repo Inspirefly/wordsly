@@ -15,13 +15,15 @@ router.get('/:num', async (req, res) => {
   let wordList = {};
   for (let i = 0; i < req.params.num; i++) {
     let def = undefined;
+    let pos;
     let word;
     while (def === undefined) {
       word = getRandomWord();
-      def = await getDef(word);
-      console.log(def);
+      [def, pos] = await getDef(word);
     }
 
+    def.push(pos);
+    console.log(def);
     wordList[word] = def;
   }
   res.json(wordList);
@@ -33,7 +35,8 @@ async function getDef(word) {
     const data = await fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${process.env.DICT_KEY}`);
     const json = await data.json();
     const def = await json[0].shortdef;
-    return def;
+    const pos = await json[0].fl;
+    return [def, pos];
   } catch(err) {
     console.log(err);
     return undefined;
