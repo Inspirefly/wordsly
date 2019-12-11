@@ -1,13 +1,13 @@
 const express = require('express');
 const fetch = require('node-fetch');
-const words = require('../../api/words_dictionary.json');
+const words = require('../../api/wordlist.json');
 
 const router = express.Router();
 
 const words_keys = Object.keys(words);
 function getRandomWord() {
   const ranNum = Math.floor(Math.random() * words_keys.length);
-  return words_keys[ranNum];
+  return words[ranNum];
 }
 
 router.get('/', (req, res) => {res.json(words)});
@@ -36,7 +36,7 @@ async function getDef(word) {
     return def;
   } catch(err) {
     console.log(err);
-    return '';
+    return undefined;
   }
 }
 
