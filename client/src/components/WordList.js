@@ -1,6 +1,6 @@
 import React from 'react';
 import uuidv4 from 'uuid/v4';
-import '../css/WordList.css';
+import '../css/WordList.scss';
 
 function WordList(props) {
   console.log(props.wordList);

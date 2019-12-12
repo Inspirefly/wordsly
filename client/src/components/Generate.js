@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Generate.css';
+import '../css/Generate.scss';
 
 class Generate extends React.Component {
   constructor(props) {

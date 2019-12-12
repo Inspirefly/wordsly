@@ -1,3 +1,5 @@
+@import "./variables";
+
 #wordlist {
   width: 90%;
   max-width: 1000px;
@@ -20,7 +22,7 @@
 }
 
 .card-container:hover > .side-stripe {
-  background-color: #fff476;
+  background-color: $primary-color;
 }
 
 .word-info {

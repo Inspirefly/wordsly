@@ -1,3 +1,5 @@
+@import "./variables";
+
 #number {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
@@ -14,7 +16,7 @@
   padding: 0.7em 1em;
   margin-left: 1em;
   cursor: pointer;
-  background-color: #fff476;
+  background-color: $primary-color;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -22,5 +24,5 @@
 
 #gen-button:active {
   color: black;
-  background-color: #fffac7;
+  background-color: $secondary-color;
 }
