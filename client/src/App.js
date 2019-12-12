@@ -12,10 +12,12 @@ class App extends React.Component {
     }
   }
 
-  generateWords = (num) => {
-    fetch('/api/words/' + String(num))
-      .then(res => res.json())
-      .then(wordList => this.setState({wordList}));
+  generateWords = async (num) => {
+    document.body.style.cursor = 'wait';
+    const res = await fetch('/api/words/' + String(num));
+    const wordList = await res.json();
+    this.setState({wordList});
+    document.body.style.cursor = 'default';
   }
 
   render() {
