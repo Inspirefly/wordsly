@@ -17,6 +17,9 @@
 
 .side-stripe {
   grid-column: 1 / 2;
+}
+
+.card-container:hover > .side-stripe {
   background-color: #fff476;
 }
 
@@ -47,6 +50,7 @@ a {
   text-decoration: none;
   color: black;
   border: none;
+  outline: none;
 }
  
 li {
