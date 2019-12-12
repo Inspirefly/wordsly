@@ -1,8 +1,9 @@
 import React from 'react';
+import '../css/Header.css';
 
 function Header() {
   return (
-    <h1>Wordsly</h1>
+    <h1 id="header">Wordsly</h1>
   );
 }
 

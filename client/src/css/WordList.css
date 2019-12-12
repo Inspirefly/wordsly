@@ -1,0 +1,54 @@
+#wordlist {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.card {
+  margin: 2em 0;
+  background-color: white;
+  box-shadow: 1px 1px 5px #ccc;
+  border-radius: 2px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
+
+.side-stripe {
+  grid-column: 1 / 2;
+  background-color: #fff476;
+}
+
+.word-info {
+  padding-left: 1em;
+  line-height: 1.6;
+}
+
+.word-info h2 {
+  font-size: 1.7rem;
+  margin-left: -0.3em;
+  padding-top: 0.3em;
+  margin-bottom: -0.15em;
+}
+
+.word-info h3 {
+  font-size: 1.4rem;
+  margin-left: 0.3em;
+}
+
+.word-info ul {
+  font-size: 1.1rem;
+  margin-left: -0.2em;
+  padding: 0 0.8em 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+ 
+li {
+  margin-left: 2em;
+}
