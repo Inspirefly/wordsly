@@ -13,11 +13,16 @@ class App extends React.Component {
   }
 
   generateWords = async (num) => {
-    document.body.style.cursor = 'wait';
-    const res = await fetch('/api/words/' + String(num));
-    const wordList = await res.json();
-    this.setState({wordList});
-    document.body.style.cursor = 'default';
+    this.setState({wordList: {}});
+    let res;
+    let word;
+    for (let i = 0; i < num; i++) {
+      res = await fetch('/api/words/1');
+      word = await res.json();
+      this.setState(prevState => {
+        return {wordList: {...prevState.wordList, ...word}};
+      });
+    }
   }
 
   render() {
