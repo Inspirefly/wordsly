@@ -23,14 +23,15 @@ router.get('/:num', async (req, res) => {
     }
 
     def.push(pos);
-    console.log(def);
+    console.log(`-=+=-
+ word: ${word}
+ def: ${def}`);
     wordList[word] = def;
   }
   res.json(wordList);
 });
 
 async function getDef(word) {
-  console.log(`word: ${word}`);
   try {
     const data = await fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${process.env.DICT_KEY}`);
     const json = await data.json();
@@ -42,6 +43,5 @@ async function getDef(word) {
     return undefined;
   }
 }
-
 
 module.exports = router;
