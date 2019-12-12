@@ -1,2 +1,2 @@
 # wordsly
-A random word generator.
+A random word generator
