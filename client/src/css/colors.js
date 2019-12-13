@@ -1,17 +1,17 @@
 export const darkRed = {
-  backgroundColor: 'red'
+  backgroundColor: 'rgb(178, 44, 44)'
 };
 
 export const lightRed = {
-  backgroundColor: 'tomato'
+  backgroundColor: 'rgb(224, 170, 170)'
 };
 
 export const darkOrange = {
-  backgroundColor: 'darkorange'
+  backgroundColor: 'rgb(204, 101, 64)'
 };
 
 export const lightOrange = {
-  backgroundColor: 'orange'
+  backgroundColor: 'rgb(255, 191, 167)'
 };
 
 export const darkYellow = {
@@ -23,25 +23,25 @@ export const lightYellow = {
 };
 
 export const darkGreen = {
-  backgroundColor: 'darkgreen'
+  backgroundColor: 'rgb(6, 85, 53)'
 };
 
 export const lightGreen = {
-  backgroundColor: 'greenyellow'
+  backgroundColor: 'rgb(180, 204, 194)'
 };
 
 export const darkBlue = {
-  backgroundColor: 'darkblue'
+  backgroundColor: 'rgb(86, 108, 115)'
 };
 
 export const lightBlue = {
-  backgroundColor: 'lightblue'
+  backgroundColor: 'rgb(173, 216, 230)'
 };
 
 export const darkPurple = {
-  backgroundColor: 'purple'
+  backgroundColor: 'rgb(147, 76, 147)'
 };
 
 export const lightPurple = {
-  backgroundColor: 'mediumpurple'
+  backgroundColor: 'rgb(232, 216, 232)'
 };
