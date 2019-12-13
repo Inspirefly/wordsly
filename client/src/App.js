@@ -32,7 +32,6 @@ class App extends React.Component {
   }
 
   setColors = (e) => {
-    console.log(e.target.style.backgroundColor);
     switch (e.target.style.backgroundColor) {
       case (darkRed.backgroundColor):
         this.setState({colors: [darkRed, lightRed]});
