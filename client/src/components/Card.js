@@ -35,7 +35,7 @@ class Card extends React.Component {
   }
 
   render() {
-    const hoverStyle = this.state.hover ? this.props.colors[0] : {'backgroundColor': 'white'};
+    const hoverStyle = this.state.hover ? this.props.getColor()[0] : {'backgroundColor': 'white'};
     return (
       <div>
         {this.state.word ? (
