@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/WordList.scss';
+import '../css/WordList.css';
 import './Card';
 
 function WordList(props) {

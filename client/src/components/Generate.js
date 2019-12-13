@@ -1,16 +1,23 @@
 import React from 'react';
-import '../css/Generate.scss';
+import '../css/Generate.css';
 
 class Generate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      num: ''
+      num: '',
+      clicked: false
     }
   }
   
   handleInput = (e) => {
     this.setState({num: e.target.value});
+  }
+
+  mouseClick = (e) => {
+    this.setState(prevState => {
+      return {clicked: !prevState.clicked}
+    });
   }
 
   generate = (e) => {
@@ -24,10 +31,13 @@ class Generate extends React.Component {
   }
 
   render() {
+    const buttonStyle = this.state.clicked ? this.props.colors[1] : this.props.colors[0];
     return (
       <div id="generate">
         <input id="number" type="text" min="1" max="100" placeholder="1-100" value={this.state.num} onChange={this.handleInput} onKeyUp={this.generate}/>
-        <button id="gen-button" onClick={this.generateWords}>GENERATE</button>
+        <button id="gen-button" style={buttonStyle} onClick={this.generateWords}
+        onMouseDown={this.mouseClick} onMouseUp={this.mouseClick}
+        >GENERATE</button>
       </div>
     );
   }
