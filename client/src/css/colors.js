@@ -1,17 +1,17 @@
 export const darkRed = {
-  backgroundColor: 'rgb(178, 44, 44)'
+  backgroundColor: 'rgb(255, 24, 24)'
 };
 
 export const lightRed = {
-  backgroundColor: 'rgb(224, 170, 170)'
+  backgroundColor: 'rgb(255, 110, 110)'
 };
 
 export const darkOrange = {
-  backgroundColor: 'rgb(204, 101, 64)'
+  backgroundColor: 'rgb(255, 128, 0)'
 };
 
 export const lightOrange = {
-  backgroundColor: 'rgb(255, 191, 167)'
+  backgroundColor: 'rgb(255, 185, 114)'
 };
 
 export const darkYellow = {
